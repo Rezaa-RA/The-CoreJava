@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+class Student
+{
+	public static void main(String[] args)
+	{
+		int id;
+		String sname, sstatus; // made strings for Student Name and Attendance
+		
+		Scanner sc = new Scanner(System.in); // Made Scanner object
+		
+		System.out.println("Enter the name of the student: "); // prompt to enter student name 
+		sname = sc.next(); // will take value from the user 
+		
+		System.out.println("Enter student id: "); // prompt to enter the student id
+		id = sc.nextInt(); // value will be taken from the user 
+		
+		System.out.println("Enter the attendence of student, Present or Absent")
+		sstatus = sc.next(); // took value from the user 
+		
+		System.out.println("id: "+id); // printing values 
+		
+		System.out.println("name: "+sname); // printing values
+		
+		System.out.println("Student Attendence: "+sstatus); // printing values 
+	}
+}
